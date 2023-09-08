@@ -13,7 +13,7 @@ export default function App() {
         backgroundColor= {color.statusbar}
 
       />
-      <Header title={"MY ACCOUNT"}/>
+      <Header title={"MY $$$ ACCOUNT"}/>
     
     </View>
   )
