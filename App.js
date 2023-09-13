@@ -1,19 +1,25 @@
 import React from 'react';
 import {View, Text, StyleSheet, Dimensions, StatusBar} from 'react-native' 
-import { Colors } from 'react-native/Libraries/NewAppScreen';
-import Header from './src/components/Header';
-import { color, parameters } from './src/global/styles';
+import { color, parameters } from './src/global/styles'
+import SignInScreen from "./src/screens/authScreens/SignInScreen"
+import Header from './src/components/Header'
+import SignInWelcomeScreen from './src/screens/authScreens/SignInWelcomeScreen'
+import RootNavigator from './src/navigation/RootNavigator';
 
 export default function App() {
 
   return(
-    <View styles= {styles.container}>
-      <StatusBar
+    <View style= {styles.container}>
+
+      <StatusBar   
         barStyle= "light-content"
         backgroundColor= {color.statusbar}
-
       />
-      <Header title={"MY $$$ ACCOUNT"}/>
+      
+      <SignInWelcomeScreen/>
+      {/* <RootNavigator/> */}
+
+      
     
     </View>
   )
